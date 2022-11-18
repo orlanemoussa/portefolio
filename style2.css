@@ -1,0 +1,202 @@
+/* Paramètres généraux  */
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Paramètres généraux body  */
+body {
+
+    font-family: "font-reg", serif;
+    background: rgba(31, 117, 231, 0.74);
+    color: #fefeff;
+    transition: 0.7s ease-in-out;
+}
+h2 {
+    text-align: center;
+    color: rgb(7, 18, 98);
+    font-family: "font-bold", serif;
+    letter-spacing: 3px;
+}
+.title {
+    font-size: calc(1.5rem + 5vw);
+    letter-spacing: 0;
+}
+span {
+    display: inline-block;
+}
+
+/*Parametre pour les images en fond*/
+.img {
+    height: 395px;
+    width: 100vw;
+    max-width: 395px;
+    margin: 0 auto;
+}
+.img:hover {
+    filter: grayscale(10%);
+}
+/*Parametre ligne de séparation */
+.line {
+    height: 2px;
+    width: 70%;
+    margin: 0 auto;
+    background: #000101;
+    transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
+    transform-origin: left;
+    transition-delay: 0.65s;
+}
+/*Parametre header */
+header {
+    position: relative;
+    margin: 2px 2px 0;
+}
+.navbar{
+    position: fixed;
+    top:0;
+    background: var(--third-color);
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+.navbar a{
+    float: left;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.navbar-gauche a{
+    color: var(--second-color);
+    font-family: Courgette;
+}
+.navbar-centre{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navbar-centre a:hover{
+    background-color: var(--second-color);
+    color: var(--fifth-color);
+}
+.navbar-droite{
+    background-color: var(--fifth-color);
+    color: var(--fourth-color);
+    margin-left: auto;
+    margin-right: 0%;
+}
+.navbar-droite a:hover{
+    color: var(--first-color);
+}
+.droite{
+    display: flex;
+}
+.navbar-droite img{
+    height: 2.5vw;
+    width: 2.5vw;
+}
+/*Parametre partie a propos de moi */
+.about {
+    margin: 400px 0 250px;
+}
+.img1-wrapper {
+    z-index: 2;
+    position: relative;
+}
+.img1 {
+    background: url(../portfolio/img/moi2.jpg) top/cover;
+}
+.h2-wrapper {
+    margin: -220px 0 200px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+.h2-wrapper h2 {
+    color: rgb(7, 18, 98);
+}
+.about p {
+    width: 70%;
+    min-width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: calc(7px + 4.5vw);
+    font-size: calc(1rem + 1vw);
+    letter-spacing: 1px;
+}
+/*Paramètre etudes et experiance*/
+.skills {
+    margin: 200px 0 250px;
+}
+.skills h2 {
+    margin-bottom: 150px;
+}
+.timeline{
+    max-width: 1280px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+}
+.box{
+    display: flex;
+}
+.box-droite{
+    justify-content: flex-start;
+}
+.box-gauche{
+    justify-content: flex-end;
+}
+.box section{
+    background: rgba(146, 154, 241, 0.53);
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+.timeline a {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: #fefeff;
+    transition: 0.1s linear;
+    font-size: calc(0.8rem + 0.8vw);
+}
+.timeline a:hover{
+    color: black;
+}
+.title{
+    text-align: center;
+    color: #071262;
+    font-family: "font-bold", serif;
+}
+.titre-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span.date {
+    color: rgb(217, 217, 217);
+    font-family: "font-bold", serif;
+}
+/*Paramètre footer */
+footer {
+    margin: 150px 0 120px;
+}
+footer p {
+    font-size: calc(1rem + 2vw);
+    text-align: center;
+    margin: 25px 0;
+}
+footer a {
+    font-family: "font-bold", serif;
+    color: #071262;
+    font-size: calc(1rem + 2vw);
+}
+
